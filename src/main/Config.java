@@ -30,7 +30,7 @@ public class Config {
             }
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
-        } catch (IOException _) {}
+        } catch (IOException e) {}
 
         setProperties(prop);
 
