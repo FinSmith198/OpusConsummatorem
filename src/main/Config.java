@@ -24,7 +24,7 @@ public class Config {
                 // try default0.conf config before default.conf, as defualt0 used for dev config, so I don't be uploading my api keys to Github :)
                 fis = new FileInputStream("default0.conf");
                 prop.load(fis);
-            } catch (FileNotFoundException _) {
+            } catch (FileNotFoundException e) {
                 fis = new FileInputStream(fileName);
                 prop.load(fis);
             }
